@@ -1,0 +1,22 @@
+<header class="masthead">
+  <h3 class="masthead-title">
+    <!--
+    <div class="logo">
+      <a class="logo__link" href="{{site.baseurl}}/">
+      {%if site.data.settings.logo %}
+        <img class="logo__image" src="{{ site.baseurl }}/images/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <small class="masthead-subtitle">{{ site.description }}</small>
+
+      {% else %}
+        {{ site.data.settings.title }}
+      {% endif %}
+      </a>
+    </div>
+    -->
+    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <small class="masthead-subtitle">{{ site.description }}</small>
+
+    {% include menu.html %}
+  </h3>
+</header>
